@@ -11,7 +11,8 @@
   "devDependencies": {},
   "scripts": {
     "lint": "./node_modules/eslint/bin/eslint.js **/*.js",
-    "test": "jest --verbose --coverage"
+    "test": "jest --verbose --coverage", 
+    "start": "node."
   },
   "repository": {
     "type": "git",
