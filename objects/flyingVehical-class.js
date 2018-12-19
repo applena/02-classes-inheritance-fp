@@ -18,7 +18,7 @@ class FlyingVehical {
 class Airplane extends FlyingVehical {
   constructor(name) {
     super(name, 'fast');
-  };
+  }
 
 }
 

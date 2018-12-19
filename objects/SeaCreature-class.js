@@ -18,7 +18,7 @@ class SeaCreature {
 class Fish extends SeaCreature {
   constructor(name) {
     super(name, 'fast');
-  };
+  }
 
 }
 

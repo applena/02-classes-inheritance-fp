@@ -8,7 +8,7 @@ const Vehical = () => ({
   drive: () => {
     return 'Moving Forward';
   },
-})
+});
 
 function Car(name) {
   let car = Object.assign(
@@ -28,7 +28,7 @@ function Motorcycle(name) {
     {wheels: 2},
     {wheelie},
     Vehical()
-  )
+  );
   
   function wheelie(){return 'Whee!';}
   return motorcycle;

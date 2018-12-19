@@ -84,11 +84,9 @@ List.prototype.splice = function(startIdx, numRemove, newItem) {
 List.prototype.slice = function(startingIdx, endingIdx) {
   endingIdx = endingIdx || this.length;
   let newObj = {};
-  console.log('******SLICE******', this.data, startingIdx, endingIdx);
   for(let i=0; i<=(endingIdx-startingIdx); i++){
     newObj[i] = this.data[startingIdx + i];
   }
-  console.log('this is the newObj', newObj)
   return newObj;
 };
 

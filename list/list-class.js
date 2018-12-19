@@ -38,7 +38,7 @@ class List {
       this.data[i]= this.data[i+1];
     }
     delete this.data[this.length];
-  };
+  }
 
   /**
    * adds and item to the beginning of the object
@@ -50,7 +50,7 @@ class List {
       this.data[i+1] = this.data[i];
     }
     this.data[0] = item;
-  };
+  }
 
   /**
    * removes the number specified from the starting index and replaces it with the newItem
@@ -70,7 +70,7 @@ class List {
     }
     this.data[startIdx] = newItem;
     this.length++;
-  };
+  }
 
   /**
    * creates a neww array from the starting index to the ending index

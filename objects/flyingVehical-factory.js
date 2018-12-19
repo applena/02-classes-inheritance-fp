@@ -8,7 +8,7 @@ const FlyingVehical = () => ({
   crash: () => {
     return 'Fallin';
   },
-})
+});
 
 function Airplane(name, maxSpeed) {
   let airplane = Object.assign(
@@ -28,7 +28,7 @@ function Helicopter(name) {
     {maxSpeed: 'slow'},
     {loop},
     FlyingVehical()
-  )
+  );
   
   function loop(){return 'Whee!';}
   return helicopter;

@@ -8,7 +8,7 @@ const SeaCreature = () => ({
   mate: () => {
     return 'matin';
   },
-})
+});
 
 function Fish(name) {
   let fish = Object.assign(
@@ -28,7 +28,7 @@ function Lobster(name) {
     {speed: 'slow'},
     {delicious},
     SeaCreature()
-  )
+  );
   
   function delicious(){return 'Yummmmm';}
   return lobster;

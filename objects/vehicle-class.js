@@ -18,7 +18,7 @@ class Vehical {
 class Car extends Vehical {
   constructor(name) {
     super(name, 4);
-  };
+  }
 
 }
 
