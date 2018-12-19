@@ -12,7 +12,7 @@
   "scripts": {
     "lint": "./node_modules/eslint/bin/eslint.js **/*.js",
     "test": "jest --verbose --coverage", 
-    "start": "node."
+    "start": "index.js"
   },
   "repository": {
     "type": "git",
