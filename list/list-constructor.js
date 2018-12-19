@@ -36,6 +36,10 @@ List.prototype.shift = function() {
   delete this.data[this.length];
 };
 
+/**
+ * adds and item to the beginning of the object
+ * @param {*} item 
+ */
 List.prototype.unshift = function(item) {
   this.length++;
   for(let i = 0; i < this.length; i++){
@@ -44,6 +48,12 @@ List.prototype.unshift = function(item) {
   this.data[0] = item;
 };
 
+/**
+ * removes the number specified from the starting index and replaces it with the newItem
+ * @param {} startIdx 
+ * @param {*} numRemove 
+ * @param {*} newItem 
+ */
 List.prototype.splice = function(startIdx, numRemove, newItem) {
   this.length = this.length - numRemove;
   //removes the numRemove from the starting index
@@ -58,6 +68,11 @@ List.prototype.splice = function(startIdx, numRemove, newItem) {
   this.length++;
 };
 
+/**
+ * creates a neww array from the starting index to the ending index
+ * @param {} startingIdx 
+ * @param {*} endingIdx 
+ */
 List.prototype.slice = function(startingIdx, endingIdx) {
   endingIdx = endingIdx || this.length;
   let newObj = {};
@@ -69,5 +84,4 @@ List.prototype.slice = function(startingIdx, endingIdx) {
   return newObj;
 };
 
-// console.log(List.push("cookie"));
 module.exports = List;
