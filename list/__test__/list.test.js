@@ -1,8 +1,8 @@
 'use strict';
 
 // These 2 should be interchangeable!
-// const List = require('../list-constructor.js');
-const List = require('../list-class.js');
+const List = require('../list-constructor.js');
+// const List = require('../list-class.js');
 
 describe('List Data Structure', () => {
 
@@ -46,6 +46,12 @@ describe('List Data Structure', () => {
     stuff.splice(1, 1, 'z');
     expect(stuff.length).toEqual(3);
     expect(stuff.data[1]).toEqual('z');
+  })
+  it('throws an error when arguments are invalid', () => {
+    let stuff = new List();
+    expect(()=>{
+      stuff.splice('zip', '23')
+    }).toThrow();
   })
 
   it('starting at the first param it returns a new obj from that point on or until the second param', () => {

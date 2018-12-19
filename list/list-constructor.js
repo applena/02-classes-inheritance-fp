@@ -55,7 +55,15 @@ List.prototype.unshift = function(item) {
  * @param {*} newItem 
  */
 List.prototype.splice = function(startIdx, numRemove, newItem) {
+  if(
+    typeof startIdx !== 'number' || 
+    typeof numRemove !== 'number'
+  ){
+    throw('invalid arguments');
+  }
+
   this.length = this.length - numRemove;
+
   //removes the numRemove from the starting index
   for (let i=startIdx; i<numRemove; i++){
     delete this.data[i];
@@ -76,7 +84,7 @@ List.prototype.splice = function(startIdx, numRemove, newItem) {
 List.prototype.slice = function(startingIdx, endingIdx) {
   endingIdx = endingIdx || this.length;
   let newObj = {};
-  console.log('***************8', this.data, startingIdx, endingIdx);
+  console.log('******SLICE******', this.data, startingIdx, endingIdx);
   for(let i=0; i<=(endingIdx-startingIdx); i++){
     newObj[i] = this.data[startingIdx + i];
   }
