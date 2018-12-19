@@ -14,15 +14,15 @@ FlyingVehicle.prototype.crash = () => {
 };
 
 // Airplane Constructor
-const Airplane = function(name, maxSpeed) {
-  FlyingVehicle.call(this, name, maxSpeed);
+const Airplane = function(name) {
+  FlyingVehicle.call(this, name, 'fast');
 };
 
 Airplane.prototype = new FlyingVehicle();
 
 //Helicopter Constructor
-const Helicopter = function(name, maxSpeed) {
-  FlyingVehicle.call(this,name,maxSpeed);
+const Helicopter = function(name) {
+  FlyingVehicle.call(this,name,'slow');
 };
 
 Helicopter.prototype = new FlyingVehicle();

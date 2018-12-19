@@ -16,15 +16,15 @@ class FlyingVehical {
 }
 
 class Airplane extends FlyingVehical {
-  constructor(name, maxSpeed) {
-    super(name, maxSpeed);
+  constructor(name) {
+    super(name, 'fast');
   };
 
 }
 
 class Helicopter extends FlyingVehical{
-  constructor(name, maxSpeed) {
-    super(name, maxSpeed);
+  constructor(name) {
+    super(name, 'slow');
   }
 
   loop() {
