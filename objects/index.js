@@ -1,5 +1,11 @@
 'use strict';
 
+var express = require('express')
+var app = express()
+
+app.listen(process.env.PORT || 3000, function(){
+  console.log('Express server listening on port %d in %s mode', this.address().port, app.settings.env);
+});
 
 // const Vehicle = require('./constructor.js');
 // const Vehicle = require('./class.js');
